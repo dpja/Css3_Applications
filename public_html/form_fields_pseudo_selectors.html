@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin:10px;
+                text-align: center;
+            }
+            form{
+                
+                border:2px solid slateblue;
+            }
+            input:enabled {
+  color: #1C1CAF;
+}
+input:disabled {
+  color: #D9D9D9;
+}
+input:checked {
+  color: #D9D9D9;
+}
+
+/* only radio elements */
+input[type="radio"]:checked {
+  margin-left: 20px;
+  width:60px;
+  height:60px;
+}
+
+/* only checkbox elements */
+input[type="checkbox"]:checked {
+  width: 70px;  
+  height: 60px;  
+}
+
+/* only option elements */
+option:checked {
+  color: red;
+}
+#FirstField:focus {
+  background-color: green;
+  color:white;
+  font-size: 20px;
+}
+
+        </style>
+    </head>
+    <body>
+     <form action="#">
+      <label for="FirstField">First Name (enabled):</label> <input type="text" id="FirstField" value="Glen"><br />
+      <label for="OrganisationField">Organisation Name (disabled):</label> <input type="text" id="OrganisationField" value="Qualin" disabled="disabled"><br />
+     
+      
+      
+<!--     input[type="radio"]:checked
+Represents all radio buttons on the page that are checked
+input[type="checkbox"]:checked
+Represents all checkboxes on the page that are checked
+option:checked
+Represents all select's options on the page that are selected-->
+      <p>Please select every sport that you play.</p>
+
+Soccer: <input type="checkbox" name="sports" value="soccer"  /><br />
+
+Football: <input type="checkbox" name="sports" value="football"  /><br /> 
+
+Baseball: <input type="checkbox" name="sports" value="baseball"  /><br /> 
+
+<p>Please select food that you want.</p>
+
+   <input type="radio" name="food" />  spicy<br />
+<input type="radio" name="food" />  Bland<br />   
+    <p>Please select state that you belong to.</p>  
+    <select name="state"> 
+  <option value="CA" >California -- CA </option>
+  <option value="TX" >Texas -- TX</option>
+  <option value="IL" >Illinoi -- IL</option>
+</select>  
+    <br>
+      <input type="button" value="Submit" />
+    
+      
+      <br>
+    </form>
+    </body>
+</html>
