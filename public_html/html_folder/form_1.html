@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <form action="#">
+      <label for="FirstField">First Name (enabled):</label> <input type="text" id="FirstField" value="Brent"><br />
+      <label for="OrganisationField">Organisation Name (disabled):</label> <input type="text" id="OrganisationField" value="Qualin" disabled="disabled"><br />
+     
+       <label for="email">Enter email : </label><input type="email" size="25" placeholder="plz enter ur email"><br />
+       <label for="Password">Enter Password : </label><input type="password" size="25"><br />
+        <label for="tel">Enter phone no. which you like : </label><input type="tel" ><br />
+       <label for="color">Enter color which you like : </label><input type="color" ><br />
+      
+       <label for="datetime">Enter date : </label><input type="date" ><br />
+       <label for="week">Enter week : </label><input type="week" ><br />
+       <label for="month">Enter month : </label><input type="month" ><br />
+       <label for="search">Enter search : </label><input type="search" placeholder="search something" ><br />
+       <label for="range">Enter range at which you like to watch sitcoms : </label><input id="rangegetval" onclick="getvalue();" type="range" min="0" max="100" value="60" step="10"><br />
+       <label for="rangeshown"> range shown: </label><input id="rangeshown"  type="text" ><br />
+      
+
+      <p>Please select every sport that you play.</p>
+
+Soccer: <input type="checkbox" name="sports" value="soccer"  /><br />
+
+Football: <input type="checkbox" name="sports" value="football"  /><br /> 
+
+Baseball: <input type="checkbox" name="sports" value="baseball"  /><br /> 
+
+<p>Please select food that you want.</p>
+
+   <input type="radio" name="food" />  spicy<br />
+<input type="radio" name="food" />  Bland<br />   
+    <p>Please select state that you belong to.</p>  
+    <select name="state"> 
+  <option value="CA" >California -- CA </option>
+  <option value="TX" >Texas -- TX</option>
+  <option value="IL" >Illinoi -- IL</option>
+</select>  
+    <br>   <br>
+      <input type="button" value="Submit" />
+    
+      
+      <br>
+      <script>
+          var rangemeter,rangetext;
+          function getvalue(){
+              rangemeter = document.getElementById("rangegetval").value;
+              document.getElementById("rangeshown").value = rangemeter;
+          }
+      </script>
+    </form>
+    </body>
+</html>

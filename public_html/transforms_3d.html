@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var wrapper3 = document.getElementById("wrapper3");
+          alert(wrapper3.getComputedStyle()) ; 
+        </script>
+        <style>
+            #wrapper1{
+                width:200px;
+                height:200px;
+                background-color:green;
+                
+            }
+            #wrapper1:hover{
+               -ms-transform: rotateX(250deg); /* IE 9 */
+   	-webkit-transform: rotateX(250deg);  /* Safari */
+    transform: rotateX(250deg);  
+            } 
+            #wrapper2{
+               width:200px;
+                height:200px;
+                background-color:purple;
+                  
+            }
+            #wrapper2:hover{
+              -ms-transform:scale(4,5);
+              -webkit-transform:scale(4,5);
+              transform:scale(4,5);
+                  
+            }
+            #wrapper3{
+               width:200px;
+                height:200px;
+                background-color:goldenrod;
+                  
+            }
+            #wrapper3:hover{
+              -ms-transform:rotate(45deg);
+              -webkit-transform:rotate(45deg);
+              transform:rotate(45deg);
+                  
+            }
+            #wrapper4{
+               width:200px;
+                height:200px;
+                background-color:yellow;
+                  
+            }
+            #wrapper4:hover{
+              -ms-transform:skew(20deg,10deg);
+              -webkit-transform:skew(20deg,10deg);
+              transform:skew(20deg,10deg);
+                  
+            }
+        </style>
+    </head>
+    <body>
+        <h1>2D transform using------Translate(),rotate(),scale(),skewX(),skewY(),matrix()</h1>
+        <h2> translate(250px,100px)</h2>
+        <div id="wrapper1"></div>
+        <hr>
+          <h2> scale(4,5)</h2>
+        <div id="wrapper2"></div>
+        <hr>
+          <h2> rotate(45deg)</h2>
+        <div id="wrapper3"></div>
+        <hr>
+          <h2> skew(20deg,10deg) </h2>
+        <div id="wrapper4"></div>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           *{
+                margin:0px;
+                padding:0px;
+                box-sizing: border-box;
+            }
+            [class*="col-"]{
+                border: 2px solid green; 
+                text-align: center;
+                float:left;
+                padding: 10px;
+                background-color:aquamarine;
+            }
+              [class="row"]:after{
+                content:" A NEW ROW STARTS";
+                   display:block;
+                   text-align: center;
+            }
+          
+            .col-1{
+                  width:8.33%;
+            }
+            .col-2{
+                  width:16.66%;
+            }
+          
+            .col-3{
+                  width:24.99%;
+            }
+          
+            .col-4{
+                  width:33.32%;
+            }
+            .col-5{
+                  width:41.65%;
+            }
+          
+            .col-6{
+                  width:50%;
+            }
+            .col-7{
+                  width:58.33%;
+            }
+            .col-8{
+                  width:66.66%;
+            }
+            .col-9{
+                  width:75%;
+            }
+            .col-10{
+                  width:83.33%;
+            }
+            .col-11{
+                  width:91.66%;
+            }
+            .col-12{
+                  width:100%;
+            }
+            h1{
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+<!--        <h1>dividing the entire span of viewport into 12 columns
+       each columns comprising of  100%/12 = 8.33%
+       so we can say col-1 width ----8.33%
+       col-2 width ----8.33% *2 = 16.66%
+       col-3  width ----8.33% *3 = 24.99%
+       col-4  width ----8.33% *4 = 33.32%
+       col-5  width ----8.33% *5 = 41.65%
+       col-6  width ----8.33% *6 = 50%
+       col-7  width ----8.33% *7 = 58.33%
+       col-8  width ----8.33% *8 = 66.66%
+       col-9  width ----8.33% *9 = 75%
+       col-10  width ----8.33% *10 = 83.33%
+       col-11  width ----8.33% *11 = 91.66%
+       col-12  width ----8.33% *12 = 100%
+       
+        </h1>-->
+        <h2>Using col-12-</h2>
+        <div class="row">
+        <div class="col-12">
+         Using col-12 Full width of viewport  
+        </div>
+        </div>
+              <h2>Using col-1 and col-11-</h2>
+             <div class="row">
+        <div class="col-1">
+          Using col-1
+        </div>
+        <div class="col-11">
+            Using col-11
+        </div>
+        </div>
+              <h2>Using col-3 and col-9</h2>
+             <div class="row">
+        <div class="col-3">
+          Using col-3
+        </div>
+        <div class="col-9">
+            Using col-9 
+        </div>
+        </div>
+              <h2>Using col-7 and col-5</h2>
+             <div class="row">
+        <div class="col-7">
+          Using col-7
+        </div>
+        <div class="col-5">
+            Using col-5 
+        </div>
+        </div>
+              <h2>Using col-11 and col-1</h2>
+             <div class="row">
+        <div class="col-11">
+          Using col-11
+        </div>
+        <div class="col-1">
+            Using col-1
+        </div>
+        </div>
+        
+    </body>
+</html>

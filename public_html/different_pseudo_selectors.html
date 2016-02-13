@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p:first-child{
+                color:orange;
+            }
+            
+            li:last-child{
+                color:green;
+            }
+           TABLE{
+               width:400px;
+               height:150px;
+                border:2px solid red;
+            }
+            td{
+                 border:2px solid green;
+            }
+            tr:nth-child(2n){
+                background-color: yellow;
+               
+            }
+            tr:nth-child(2n+1){
+                  background-color: orange;
+            }
+            .first h1:nth-child(1){
+               background-color: yellow;
+            }
+            .first h1:last-of-type{
+                 background-color: purple;
+                 color:white;
+            }
+            h1:nth-last-child(2n){
+                  background-color: cyan;
+                 color:white;
+            }
+            p:last-of-type{
+                background-color: magenta;
+                 color:white;  
+            }
+            p:nth-last-child(-n+3){
+                background-color: mediumturquoise;
+                 color:white;   
+            }
+        </style>
+    </head>
+    <body>
+         <p>write content 1</p>  
+        <div>
+            <p>write content 2</p>  
+            <p>write content 3</p>  
+        </div>
+         <ul>
+             <li>List item 1</li>
+             <li>List item 2</li>
+             <li>List item 3</li>
+         </ul>
+         <TABLE>
+   <TR>
+      <TD>Data 1</TD>
+      <TD>Data 2</TD>
+   </TR>
+   <TR>
+      <TD>Data 3</TD>
+      <TD>Data 4</TD>
+   </TR>
+   <TR>
+      <TD>Data 5</TD>
+      <TD>Data 6</TD>
+   </TR>
+</TABLE>
+      <div class="first">
+      <h1>This h1 is selected!</h1>
+      <h1>This h1 is not. :(</h1>
+      <h1>What about this?</h1>
+      <h1>And this one?</h1>
+      <h1>Another example</h1>
+      <h1>Yet another example</h1>
+      <h1>And another</h1>
+</div>  
+         <p>Rather than give you one long confusing list of topics</p>   
+          <p>the essay topics have been divided into five categories.</p>  
+          <p>This is not an exhaustive list.</p>  
+           <p>only a representative sample of essay topics.</p>  
+    </body>
+</html>
